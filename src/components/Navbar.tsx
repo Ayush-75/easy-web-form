@@ -10,13 +10,17 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-bank-blue sticky top-0 z-50 border-b border-bank-gold">
+    <header className="bg-bank-blue sticky top-0 z-50 border-b-2 border-bank-gold">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-white">FEDBANK</span>
-              <span className="hidden md:block ml-2 text-xs text-white">FINANCIAL SERVICES LIMITED</span>
+              <img 
+                src="/lovable-uploads/b53786b1-0dc6-4208-b584-d10261c1bd66.png" 
+                alt="FEDBANK Logo" 
+                className="h-10 mr-2"
+              />
+              <span className="hidden md:block text-xs text-white">FINANCIAL SERVICES LIMITED</span>
             </a>
           </div>
 
