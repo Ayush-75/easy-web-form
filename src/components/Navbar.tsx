@@ -1,7 +1,6 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import LoginDialog from "./LoginDialog";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +20,6 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
             <a href="#about" className="text-white hover:text-bank-gold transition-colors">
               About Us
@@ -44,12 +42,9 @@ const Navbar = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button 
-              variant="outline" 
-              className="hidden md:flex border-bank-gold text-bank-gold hover:bg-bank-gold hover:text-white"
-            >
-              Login
-            </Button>
+            <div className="hidden md:block">
+              <LoginDialog />
+            </div>
             
             <button
               onClick={toggleMenu}
@@ -66,7 +61,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-bank-blue-dark">
           <div className="container mx-auto px-4 py-4 space-y-3">
@@ -88,12 +82,9 @@ const Navbar = () => {
             <a href="#join" className="block text-white hover:text-bank-gold py-2">
               Join Us
             </a>
-            <Button 
-              variant="outline" 
-              className="w-full border-bank-gold text-bank-gold hover:bg-bank-gold hover:text-white"
-            >
-              Login
-            </Button>
+            <div className="mt-4">
+              <LoginDialog />
+            </div>
           </div>
         </div>
       )}
