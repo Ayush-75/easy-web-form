@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import LoginDialog from "./LoginDialog";
@@ -20,7 +21,6 @@ const Navbar = () => {
                 alt="FEDBANK Logo" 
                 className="h-10 mr-2"
               />
-              <span className="hidden md:block text-xs text-white">FINANCIAL SERVICES LIMITED</span>
             </a>
           </div>
 
