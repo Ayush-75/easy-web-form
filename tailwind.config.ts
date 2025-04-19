@@ -52,6 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Bank theme colors
+				bank: {
+					blue: {
+						DEFAULT: '#003b7e',
+						dark: '#002c60',
+						light: '#0a4c94'
+					},
+					gold: '#f9a01b',
+					white: '#ffffff'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
