@@ -1,8 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { Select } from "@/components/ui/select";
-import { Input } from "@/components/ui/input";
 import LoanApplicationForm from "./LoanApplicationForm";
+import ImageSlider from "./ImageSlider";
 
 const HeroSection = () => {
   return (
@@ -32,21 +31,9 @@ const HeroSection = () => {
             <LoanApplicationForm />
           </div>
 
-          {/* Hero Image - Only visible on larger screens */}
+          {/* Image Slider - Only visible on larger screens */}
           <div className="hidden lg:block relative z-10">
-            <div className="bg-bank-blue-dark rounded-lg p-6 relative overflow-hidden">
-              <h2 className="text-center text-xl text-bank-gold font-bold">AFFORDABLE</h2>
-              <h3 className="text-center text-3xl text-white font-bold mt-1">HOME LOAN</h3>
-              <p className="text-center text-white text-lg mt-2">Make Your Dream Home A Reality</p>
-              
-              <div className="mt-8">
-                <img 
-                  src="/lovable-uploads/293ecc32-4471-4efc-a3db-2e4522c40d59.png" 
-                  alt="Home Loan" 
-                  className="mx-auto max-w-full h-auto"
-                />
-              </div>
-            </div>
+            <ImageSlider />
           </div>
         </div>
       </div>
