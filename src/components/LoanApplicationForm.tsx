@@ -27,7 +27,7 @@ const LoanApplicationForm = () => {
 
       {/* Apply Button */}
       <div className="space-y-2">
-        <Button className="bg-bank-gold hover:bg-amber-600 text-gray-800 font-semibold w-32">
+        <Button className="bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold w-32">
           Apply
         </Button>
         <p className="text-sm text-gray-800">
@@ -40,5 +40,5 @@ const LoanApplicationForm = () => {
       </div>
     </div>;
 };
-export default LoanApplicationForm;
 
+export default LoanApplicationForm;
