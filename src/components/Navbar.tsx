@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import LoginDialog from "./LoginDialog";
@@ -11,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-bank-blue sticky top-0 z-50 border-b-2 border-bank-gold">
+    <header className="bg-bank-blue sticky top-0 z-50 border-b-[3px] border-bank-gold">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
